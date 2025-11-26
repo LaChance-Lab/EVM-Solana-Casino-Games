@@ -301,7 +301,7 @@ git clone https://github.com/LaChance-Lab/Multi-Chain-Casino-Games.git
 cd Multi-Chain-Casino-Games
 ```
 
-#### 2️⃣ Solana Setup (Coming Soon)
+#### 2️⃣ Solana Setup
 ```bash
 cd solana
 npm install
@@ -309,7 +309,7 @@ anchor build
 anchor test
 ```
 
-#### 3️⃣ EVM Setup (Coming Soon)
+#### 3️⃣ EVM Setup
 ```bash
 cd evm
 forge install
@@ -317,16 +317,14 @@ forge build
 forge test -vvv
 ```
 
-#### 4️⃣ Frontend Setup (Coming Soon)
+#### 4️⃣ Frontend Setup
 ```bash
 cd frontend
 npm install
 npm run dev
 # Open http://localhost:3000
 ```
-
-> **Note:** Smart contracts and frontend are currently under development. 
-> Star ⭐ this repo to get notified when they're released!
+> Star ⭐ this repo to get notified whenever this repo is updated!
 
 ### Deploy to Testnet
 
@@ -611,8 +609,6 @@ Multi-Chain-Casino-Games/
 
 ---
 
----
-
 ## 🚧 Development Status
 
 <div align="center">
@@ -626,7 +622,7 @@ Multi-Chain-Casino-Games/
 | 🤖 Telegram Bot | 🔜 Planned | ████░░░░░░░░ 20% |
 | 🔐 Security Audit | 🔜 Planned | ████████████ 100% |
 
-**Latest Update:** Dec 2024 | **Expected Release:** Q1 2025
+**Latest Update:** Nov 2025
 
 </div>
 
@@ -635,8 +631,6 @@ Multi-Chain-Casino-Games/
 ---
 
 ## 📱 Connect With Us
-
-<div align="center">
 
 ### 💼 Business & Partnerships
 
@@ -663,8 +657,6 @@ Interested in collaboration or contributing?
 - 💰 **DeFi** - Financial protocol integrations
 
 **Open an issue** or **join our Telegram** to discuss!
-
-</div>
 
 ---
 
