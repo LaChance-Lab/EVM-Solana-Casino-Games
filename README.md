@@ -1,16 +1,13 @@
 <div align="center">
 
 # 🎰 Multi-Chain Casino Platform
-
-### Provably Fair Gaming on Solana & EVM Chains
-
 [![Solana](https://img.shields.io/badge/Solana-9945FF?style=for-the-badge&logo=solana&logoColor=white)](https://solana.com/)
 [![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=ethereum&logoColor=white)](https://ethereum.org/)
 [![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)](https://www.rust-lang.org/)
 [![Solidity](https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white)](https://soliditylang.org/)
 [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/lachancelab)
 
-**10 Classic Casino Games • Multi-Chain Support • Provably Fair • Telegram Integration**
+**🎲 Provably Fair Casino Platform | 10 Games | Multi-Chain Support**
 
 [🎮 Games](#-games-suite) • [🔗 Chains](#-supported-chains) • [🛡️ Security](#️-security-features) • [📱 Contact](#-contact)
 
@@ -42,6 +39,34 @@ A fully decentralized, provably fair casino platform supporting both Solana and 
 - 🏦 DeFi protocols integrating gaming features
 - 👥 Communities wanting to run their own casino
 - 💼 Token projects seeking utility and engagement
+
+---
+## 🏗️ Architecture
+
+\`\`\`
+┌────────────────────────────────────────────────┐
+│              Frontend (Next.js)                │
+│  ┌──────────┐  ┌──────────┐  ┌──────────┐      │
+│  │ Phantom  │  │ MetaMask │  │ Telegram │      │
+│  └──────────┘  └──────────┘  └──────────┘      │
+└────────────────────────────────────────────────┘
+                      │
+        ┌─────────────┴─────────────┐
+        │                           │
+┌───────▼────────┐          ┌───────▼────────┐
+│ Solana Chain   │          │  EVM Chains    │
+│                │          │                │
+│ ┌────────────┐ │          │ ┌────────────┐ │
+│ │ ORAO VRF   │ │          │ │Chainlink   │ │
+│ └────────────┘ │          │ │    VRF     │ │
+│                │          │ └────────────┘ │
+│ ┌────────────┐ │          │ ┌────────────┐ │
+│ │Game        │ │          │ │Game        │ │
+│ │Programs    │ │          │ │Contracts   │ │
+│ └────────────┘ │          │ └────────────┘ │
+└────────────────┘          └────────────────┘
+\`\`\`
+
 
 ---
 
@@ -465,29 +490,29 @@ Draw your winning numbers!
 - **💎 Asset Support:** Tokens and NFTs
 
 ---
+### 💼 Business Inquiries
 
-## 📞 Contact
+**Looking to build your own casino platform?**
 
-<div align="center">
-
-### 💬 Get in Touch
-
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/lachancelab)
-
-**Telegram:** [t.me/lachancelab](https://t.me/lachancelab)
-
----
-
-### 🤝 Partnership Opportunities
-
-- 🎰 White-label casino solutions
-- 🔧 Custom game development
-- 🌉 Chain integration services
-- 🎨 UI/UX customization
+We offer:
+- 🎰 White-label solutions
+- 🔧 Custom game development  
+- 🌉 Chain integration
 - 🛡️ Security audits
-- 📈 Marketing and growth
+- 📈 Marketing & launch support
 
+**Contact:** admin@lachancelab.com
+**Telegram:** [@lachancelab](https://t.me/lachancelab)
 ---
+
+### 🤝 Partnerships
+
+Interested in collaboration?
+- Token integrations
+- Cross-chain bridges
+- Gaming platforms
+- DeFi protocols
+
 
 ### ⚠️ Disclaimer
 
