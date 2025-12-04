@@ -305,7 +305,7 @@ cd Multi-Chain-Casino-Games
 
 #### 2️⃣ Solana Setup
 ```bash
-cd solana
+cd web3/solana
 npm install
 anchor build
 anchor test
@@ -313,7 +313,7 @@ anchor test
 
 #### 3️⃣ EVM Setup
 ```bash
-cd evm
+cd web3/evm
 forge install
 forge build
 forge test -vvv
@@ -332,11 +332,13 @@ npm run dev
 
 **Solana Devnet:**
 ```bash
+cd web3/solana
 anchor deploy --provider.cluster devnet
 ```
 
 **Ethereum Sepolia:**
 ```bash
+cd web3/evm
 forge script script/Deploy.s.sol --rpc-url sepolia --broadcast --verify
 ```
 
@@ -351,25 +353,45 @@ Multi-Chain-Casino-Games/
 ├── 📄 CONTRIBUTING.md        ← Contribution guidelines
 ├── 📄 SECURITY.md            ← Security policy
 │
-├── 📁 solana/                ← Solana programs (Rust + Anchor)
-│   ├── programs/
-│   │   ├── crash/
-│   │   ├── coinflip/
-│   │   ├── plinko/
-│   │   └── dice/
-│   ├── tests/
-│   ├── Anchor.toml
-│   └── README.md
-│
-├── 📁 evm/                   ← EVM contracts (Solidity)
-│   ├── src/
-│   │   ├── Crash.sol
-│   │   ├── CoinFlip.sol
-│   │   ├── Plinko.sol
-│   │   └── Dice.sol
-│   ├── test/
-│   ├── foundry.toml
-│   └── README.md
+├── 📁 web3/                  ← Smart contracts
+│   ├── 📁 solana/            ← Solana programs (Rust + Anchor)
+│   │   ├── programs/
+│   │   │   ├── common/       ← Shared utilities
+│   │   │   ├── crash/
+│   │   │   ├── coinflip/
+│   │   │   ├── plinko/
+│   │   │   ├── dice/
+│   │   │   ├── jackpot/
+│   │   │   ├── slots/
+│   │   │   ├── blackjack/
+│   │   │   ├── roulette/
+│   │   │   ├── poker/
+│   │   │   └── lottery/
+│   │   ├── tests/
+│   │   ├── Anchor.toml
+│   │   ├── Cargo.toml
+│   │   └── README.md
+│   │
+│   └── 📁 evm/               ← EVM contracts (Solidity)
+│       ├── src/
+│       │   ├── interfaces/
+│       │   │   └── ICasinoGame.sol
+│       │   ├── libraries/
+│       │   │   └── CasinoMath.sol
+│       │   ├── Crash.sol
+│       │   ├── CoinFlip.sol
+│       │   ├── Plinko.sol
+│       │   ├── Dice.sol
+│       │   ├── Jackpot.sol
+│       │   ├── Slots.sol
+│       │   ├── Blackjack.sol
+│       │   ├── Roulette.sol
+│       │   ├── Poker.sol
+│       │   └── Lottery.sol
+│       ├── test/
+│       ├── script/
+│       ├── foundry.toml
+│       └── README.md
 │
 ├── 📁 frontend/              ← Next.js frontend
 │   ├── src/
@@ -394,7 +416,7 @@ Multi-Chain-Casino-Games/
     └── evm/
 ```
 
-> **Status:** 🚧 Repository structure is being populated. 
+> **Status:** ✅ All smart contracts implemented and ready for deployment. 
 
 
 ## ✨ Core Features
