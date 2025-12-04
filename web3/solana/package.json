@@ -1,0 +1,28 @@
+{
+  "name": "multi-chain-casino-solana",
+  "version": "1.0.0",
+  "description": "Solana programs for Multi-Chain Casino Games",
+  "scripts": {
+    "build": "anchor build",
+    "test": "anchor test --skip-local-validator",
+    "test:local": "anchor test",
+    "deploy:devnet": "anchor deploy --provider.cluster devnet",
+    "deploy:mainnet": "anchor deploy --provider.cluster mainnet",
+    "lint": "cargo clippy --all-targets",
+    "format": "cargo fmt --all"
+  },
+  "dependencies": {
+    "@coral-xyz/anchor": "^0.29.0",
+    "@solana/web3.js": "^1.87.6",
+    "@solana/spl-token": "^0.3.9"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/mocha": "^10.0.6",
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^5.3.3"
+  }
+}
+
