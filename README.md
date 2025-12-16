@@ -299,7 +299,7 @@ Draw your winning numbers!
 
 #### 1️⃣ Clone Repository
 ```bash
-git clone https://github.com/LaChance-Lab/Multi-Chain-Casino-Games.git
+git clone https://github.com/LaChance-Lab/EVM-Solana-Casino-Games.git
 cd Multi-Chain-Casino-Games
 ```
 
