@@ -1,5 +1,8 @@
-# 🎰 Multi-Chain Casino Platform
+# Multi-Chain Casino Games Platform | Solana & EVM Casino Game Smart Contracts
 
+**Multi-chain casino games platform with 10 provably fair games. Solana casino games, EVM casino games, blockchain casino smart contracts. Built with Anchor (Rust) and Solidity. Supports Solana, Ethereum, Base, Arbitrum, Polygon. VRF-powered randomness with Chainlink and ORAO. Crash, Plinko, Dice, Blackjack, Roulette, Poker, Slots, CoinFlip, Lottery games.**
+
+This repository provides production-ready Solana and EVM casino game smart contracts for building provably fair Web3 casino games. It supports multi-chain deployment on Solana and EVM networks, enabling developers to create decentralized casino games with transparent logic, verifiable randomness, and on-chain fairness.
 <div align="center">
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -773,6 +776,30 @@ Interested in collaboration or contributing?
 
 ---
 
+## ❓ Frequently Asked Questions (FAQ)
+
+### What is a provably fair casino game?
+Provably fair casino games use Verifiable Random Function (VRF) technology to ensure all game outcomes are random and verifiable. Players can independently verify that the house cannot manipulate results.
+
+### Which blockchains are supported?
+Currently: Solana, Ethereum, Base, Arbitrum, Polygon. Planned: Sui, Cardano, Bitcoin.
+
+### Can I use this commercially?
+Yes! MIT licensed - use for any purpose including commercial projects.
+
+### How do I deploy the contracts?
+See our [Deployment Guide](./docs/DEPLOYMENT.md) for step-by-step instructions.
+
+### What tokens are supported?
+Any SPL token (Solana) or ERC-20 token (EVM chains). USDC, USDT, and custom tokens all work.
+
+### Is this audited?
+Yes, all contracts undergo security audits. See [SECURITY.md](./SECURITY.md) for details.
+
+**More questions?** See our [FAQ Guide](./docs/FAQ.md) or open a [GitHub Discussion](https://github.com/LaChance-Lab/EVM-Solana-Casino-Games/discussions).
+
+---
+
 ## ⚠️ Disclaimer
 
 **This platform is for entertainment purposes. Please gamble responsibly and comply with your local regulations. The house always has an edge—play for fun, not profit.**
@@ -782,5 +809,7 @@ Interested in collaboration or contributing?
 Made with ❤️ by LaChanceLab
 
 *Powered by Provably Fair Technology*
+
+**Keywords:** solana casino game, evm casino games, provably fair casino, blockchain casino games, web3 casino platform, multi-chain casino, solana smart contracts, ethereum casino contracts, casino game development, decentralized casino, VRF casino games, chainlink VRF, ORAO VRF, crash game, plinko game, dice game, blackjack smart contract, roulette blockchain, poker on-chain, slots game, coinflip casino, lottery smart contract
 
 </div>

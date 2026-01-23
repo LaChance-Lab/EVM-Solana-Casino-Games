@@ -1,0 +1,49 @@
+name: SEO Check
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # Run weekly on Mondays
+    - cron: '0 0 * * 1'
+
+jobs:
+  seo-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Check README exists
+        run: test -f README.md || exit 1
+      
+      - name: Check README length
+        run: |
+          LINES=$(wc -l < README.md)
+          if [ $LINES -lt 100 ]; then
+            echo "Warning: README.md is too short ($LINES lines). Consider adding more content for better SEO."
+            exit 1
+          fi
+      
+      - name: Check for keywords
+        run: |
+          KEYWORDS=("solana" "casino" "provably fair" "smart contracts" "VRF" "multi-chain")
+          MISSING=()
+          for keyword in "${KEYWORDS[@]}"; do
+            if ! grep -qi "$keyword" README.md; then
+              MISSING+=("$keyword")
+            fi
+          done
+          if [ ${#MISSING[@]} -gt 0 ]; then
+            echo "Warning: Missing keywords in README: ${MISSING[*]}"
+          fi
+      
+      - name: Check documentation files
+        run: |
+          REQUIRED_FILES=("SECURITY.md" "CHANGELOG.md" "CONTRIBUTING.md")
+          for file in "${REQUIRED_FILES[@]}"; do
+            if [ ! -f "$file" ]; then
+              echo "Warning: $file is missing. This helps with SEO."
+            fi
+          done
